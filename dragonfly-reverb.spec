@@ -1,5 +1,5 @@
 Name: dragonfly-reverb
-Version: 2.0.0
+Version: 3.0.0
 Release: 1%{?dist}
 Summary: The Dragonfly Reverb audio effects
 
@@ -7,6 +7,7 @@ License: GPLv3+
 URL: https://michaelwillis.github.io/dragonfly-reverb/	
 Source0: https://github.com/michaelwillis/%{name}/releases/download/%{version}/DragonflyReverb-Source-v%{version}.tar.gz
 
+BuildRequires: gcc gcc-c++
 BuildRequires: mesa-libGL-devel
 BuildRequires: libX11-devel
 BuildRequires: jack-audio-connection-kit-devel
@@ -53,5 +54,8 @@ cp -r bin/*.lv2 %{buildroot}/%{_libdir}/lv2/
 %{_libdir}/lv2/*.lv2/
 
 %changelog
+* Fri Mar 13 2020 Mattias Ohlsson <mattias.ohlsson@inprose.com> - 3.0.0-1
+- Update to 3.0.0
+
 * Wed Jan 08 2020 Mattias Ohlsson <mattias.ohlsson@inprose.com> - 2.0.0-1
 - Initial build
