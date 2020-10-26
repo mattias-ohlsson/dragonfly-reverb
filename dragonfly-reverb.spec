@@ -1,5 +1,5 @@
 Name: dragonfly-reverb
-Version: 3.2.0
+Version: 3.2.1
 Release: 1%{?dist}
 Summary: The Dragonfly Reverb audio effects
 
@@ -65,6 +65,9 @@ cp -r bin/*.lv2 %{buildroot}/%{_libdir}/lv2/
 %{_libdir}/lv2/*.lv2/
 
 %changelog
+* Mon Oct 26 2020 Mattias Ohlsson <mattias.ohlsson@inprose.com> - 3.2.1-1
+- Update to 3.2.1
+
 * Tue Jul 14 2020 Mattias Ohlsson <mattias.ohlsson@inprose.com> - 3.2.0-1
 - Update to 3.2.0
 
